@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DiveFlorida</title>
+    <link rel="stylesheet" href="scss/styles.scss">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="js/main.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+  </head>
+
+
+  <body class="d-flex text-center text-bg-dark">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="header">
+        <div>
+            <h3 class="float-md-start mb-0">DiveFlorida</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+    
+                <a type="button" class="nav-link fw-bold py-1 px-0"
+                tabindex="0" 
+                role="button" data-bs-toggle="popover" 
+                data-bs-placement="bottom"
+                data-bs-custom-class="custom-popover text-center"
+                data-bs-title="Custom popover"
+                data-bs-content="This popover is themed via CSS variables.">
+                Contact
+                </a>
+            </nav>
+            
+        </div>
+        </header>
+    
+        <main>
+            
+            <div class="container text-center p-2 bg-secondary rounded" style="height: 700px;">
+                <p class="lead">Dive Locations</p>
+                <div class="div col m-2 p-2">
+                    <div class="bg-secondary border rounded">
+                        <div id="map" style="height: 350px;" class="row m-1"></div>
+                    </div>
+                    <div class="row text-center w-100 m-0 p-2">
+                        <!-- Weather Component -->
+                        <div id="site-info" style="height: 225px;">
+                            <i id="site-name"></i>
+                            <p id="site-desc" class="m-2 p-1"></p>
+                            <span></span>
+                        </div>
+                        <div id="weather" class="text-start">
+                            <i id="weather-icon"></i>
+                            <span id="weather-temp"></span>
+                            <span id="weather-description" class="d-none d-lg-inline m-1 p-1"></span>
+                            <!-- Dive Site Info -->
+                            
+                        </div>
+                            
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        
+        <footer class="text-white-50 text-center" id="footer">
+            <div class="container-fluid">
+                <p class="p-0 mb-0 v-1 lead">Alexander Adak</p>
+                <nav class="nav nav-masthead justify-content-center">
+                <a href="https://www.github.com" class="nav-link fw-bold py-1 px-0 m-0 mr-1" target="_blank">Github</a>        
+                <a href="https://www.aadak.dev" target="_blank" class="nav-link fw-bold py-1 px-0 ml-1">Portfolio</a>  
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6cd30dd389.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
