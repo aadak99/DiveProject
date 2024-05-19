@@ -32,6 +32,7 @@ const spanishrosks = new diveSite("Spanish Rosks", 27.48741, -82.71289, "A reef 
 const bluegrotto = new diveSite("Blue Grotto", 29.38814, -82.48657, "The Blue Grotto is a freshwater spring and cavern located in Williston, Florida. The water is crystal clear and 22°C/°72 F year-round. There are three areas to explore: an open water basin, upper cavern and lower cavern. At 9 metres/30 feet, there is a diving bell filled with air pumped from the surface. Divers may also encounter Virgil, a friendly softshell turtle who lives in the grotto. Divers with training and experience in deep diving can explore the lower cavern. A dive torch is recommended.");
 
 diveSites.push(rainBow, abyss, destinjetties, bluespringpark, blueheron, standrewsjetties, cptmike, wrecktrek, spanishrosks, bluegrotto);
+console.log(diveSites.length);
 drawMap();
 
 function drawMap() {
